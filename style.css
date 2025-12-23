@@ -1,0 +1,103 @@
+:root {
+  --bg: #0b1020;
+  --card: #121a33;
+  --text: #e9ecf5;
+  --muted: #b8c0dd;
+  --line: rgba(255,255,255,0.10);
+  --accent: #6aa6ff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: radial-gradient(900px 600px at 10% 10%, rgba(106,166,255,0.20), transparent 55%),
+              radial-gradient(900px 600px at 90% 20%, rgba(140,255,210,0.10), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 28px; }
+h1 { margin: 0; font-size: 34px; letter-spacing: 0.2px; }
+.sub { margin: 8px 0 0; color: var(--muted); }
+
+.pill {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+  background: rgba(255,255,255,0.03);
+}
+
+.card {
+  background: rgba(18,26,51,0.78);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 18px;
+  margin: 14px 0;
+  backdrop-filter: blur(6px);
+}
+
+.note { color: var(--muted); }
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab.active {
+  border-color: rgba(106,166,255,0.55);
+  background: rgba(106,166,255,0.14);
+}
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+.who {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 10px 0 6px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.value {
+  font-weight: 700;
+  color: var(--text);
+}
+
+h2 { margin: 0 0 10px; font-size: 22px; }
+h3 { margin: 16px 0 8px; font-size: 16px; color: var(--text); }
+ul, ol { margin: 8px 0 0 20px; color: var(--muted); }
+.checklist li { margin: 6px 0; }
+
+.contact { margin-top: 14px; color: var(--muted); }
+code {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--line);
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.footer { color: var(--muted); padding-bottom: 36px; }
