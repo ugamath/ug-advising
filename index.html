@@ -3,192 +3,189 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UG Advising — Centralized Help Desk</title>
+  <title>Home | UG Advising (Mathematics, SNU)</title>
+  <meta name="description" content="Undergraduate Advising portal for Mathematics at Shiv Nadar University." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="wrap header">
-    <div>
-      <h1>UG Advising</h1>
-      <p class="sub">
-        Centralized platform for undergraduate advising and communication.
-      </p>
-    </div>
-    <div class="pill">Last updated: 22 Dec 2025</div>
-  </header>
+<a class="skip-link" href="#content">Skip to content</a>
 
-  <main class="wrap">
-    <section class="card">
-      <h2>How to use this website</h2>
-      <ol>
-        <li>Pick the tab that matches your query.</li>
-        <li>Read the scope + checklist.</li>
-        <li>Prepare the required info before emailing the responsible faculty.</li>
-      </ol>
-      <p class="note">
-        If your query doesn’t fit any tab, use <b>“Other UG Academic/Advisory Matters”</b>.
-      </p>
-    </section>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="UG Advising Home">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>UG Advising • Mathematics</strong>
+        <span>Shiv Nadar University</span>
+      </div>
+    </a>
 
-    <nav class="tabs card" aria-label="UG Advising Tabs">
-      <button class="tab active" data-tab="charu">Minor / Specialization / Post-Registration</button>
-      <button class="tab" data-tab="parul">Exams / Grades / Timetable / Pre-Enrollment</button>
-      <button class="tab" data-tab="qazi">Documentation / Course Administration</button>
-      <button class="tab" data-tab="neha">UG Thesis</button>
-      <button class="tab" data-tab="pradip">Other UG Academic/Advisory Matters</button>
+    <input type="checkbox" id="nav-toggle" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="small">Menu</span>
+    </label>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="tab" href="minor-specialization.html">Minor / Specialization / Post-Registration</a>
+<a class="tab" href="exams-grades-timetable.html">Exams / Grades / Timetable / Pre-Enrolment</a>
+<a class="tab" href="documentation-course-admin.html">Documentation / Course Administration</a>
+<a class="tab" href="ug-thesis.html">UG Thesis</a>
+<a class="tab" href="other-matters.html">Other UG Matters</a>
     </nav>
 
-    <section class="panel card active" id="charu" role="region" aria-label="Minor / Specialization / Post-Registration">
-      <h2>Minor, Specialization, and Post-Registration Course Concerns</h2>
-      <div class="who">
-        <span class="label">Responsible faculty</span>
-        <span class="value">Dr. Charu</span>
+    <div class="cta">
+      <a class="button primary" href="form.html">Submit a query</a>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+  <div class="container">
+    
+<section class="hero">
+  <div class="card">
+    <div class="pad">
+      <span class="badge">Centralized UG advising website</span>
+      <h1>Undergraduate Advising Portal (Mathematics)</h1>
+      <p class="lead">
+        Use the tabs below to route your query to the correct faculty member. This helps us respond faster and keeps
+        communication consistent.
+      </p>
+      <div style="display:flex; gap:.65rem; flex-wrap:wrap; margin-top:.7rem;">
+        <a class="button primary" href="form.html">Submit a query</a>
+        <a class="button" href="#categories">Browse categories</a>
       </div>
-
-      <h3>Scope</h3>
-      <ul>
-        <li>Queries related to Minor programs and Specializations</li>
-        <li>Concerns after course registration requiring faculty-level discussion</li>
-        <li>Excludes examination- and grade-related matters</li>
-      </ul>
-
-      <h3>Before you write</h3>
-      <ul class="checklist">
-        <li>Student name + ID + program + batch</li>
-        <li>Minor/Specialization name and current status</li>
-        <li>Courses involved (course code + section)</li>
-        <li>Clear question + what outcome you want</li>
-      </ul>
-
-      <p class="contact">
-        <b>Suggested subject:</b> <code>[UG Advising] Minor/Specialization Query — &lt;StudentID&gt;</code>
-      </p>
-    </section>
-
-    <section class="panel card" id="parul" role="region" aria-label="Exams / Grades / Timetable / Pre-Enrollment">
-      <h2>Examination, Grades, Timetable, and Pre-Enrollment Queries</h2>
-      <div class="who">
-        <span class="label">Responsible faculty</span>
-        <span class="value">Dr. Parul</span>
+      <hr class="hr" />
+      <div class="notice">
+        <strong>Committee decision (22 Dec 2025):</strong> responsibilities are split into five categories and this site
+        mirrors those five categories.
       </div>
+    </div>
+  </div>
 
-      <h3>Scope</h3>
-      <ul>
-        <li>Missed examinations and related concerns (often with Dean’s office)</li>
-        <li>Grade-related concerns and suggestions</li>
-        <li>Timetable management issues</li>
+  <div class="card">
+    <div class="pad">
+      <h2>Before you submit</h2>
+      <ul class="list">
+        <li>Write <strong>one</strong> issue per form submission.</li>
+        <li>Include your <strong>Name</strong>, <strong>SNU ID</strong> (if applicable), and <strong>programme/year</strong>.</li>
+        <li>Attach screenshots/documents when relevant.</li>
+        <li>If your issue is urgent (e.g., deadline today), mention the deadline clearly.</li>
       </ul>
-
-      <h3>Before you write</h3>
-      <ul class="checklist">
-        <li>Course code + instructor + semester</li>
-        <li>Exact issue (missed exam / grade / timetable)</li>
-        <li>Any supporting document (medical note, email trail, etc.)</li>
-        <li>Deadline sensitivity (dates)</li>
-      </ul>
-
-      <p class="contact">
-        <b>Suggested subject:</b> <code>[UG Advising] Exam/Grade/Timetable — &lt;CourseCode&gt; — &lt;StudentID&gt;</code>
-      </p>
-    </section>
-
-    <section class="panel card" id="qazi" role="region" aria-label="Documentation / Course Administration">
-      <h2>Academic Documentation and Course Administration</h2>
-      <div class="who">
-        <span class="label">Responsible faculty</span>
-        <span class="value">Dr. Qazi Azhad</span>
+      <div style="margin-top:.8rem;">
+        <a class="button" href="form.html">Open the query form →</a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <h3>Scope</h3>
-      <ul>
-        <li>Documentation queries (course catalogue, etc.)</li>
-        <li>Course allotment and course offerings</li>
-        <li>Student internship, student activities</li>
-      </ul>
+<section id="categories" class="section">
+  <div class="section-head">
+    <h2>Query categories (five tabs)</h2>
+    <span class="badge">Choose the best match</span>
+  </div>
 
-      <h3>Before you write</h3>
-      <ul class="checklist">
-        <li>What document/info you need (and why)</li>
-        <li>Program + semester + relevant course list</li>
-        <li>For internships/activities: dates + approvals needed</li>
-      </ul>
-
-      <p class="contact">
-        <b>Suggested subject:</b> <code>[UG Advising] Documentation/Course Admin — &lt;Topic&gt; — &lt;StudentID&gt;</code>
-      </p>
-    </section>
-
-    <section class="panel card" id="neha" role="region" aria-label="UG Thesis">
-      <h2>Undergraduate Thesis</h2>
-      <div class="who">
-        <span class="label">Responsible faculty</span>
-        <span class="value">Dr. Neha</span>
+  <div class="grid">
+    <a class="tile col-6" href="minor-specialization.html">
+      <div class="top">
+        <div>
+          <h3>Minor / Specialization / Post‑Registration</h3>
+          <p class="kicker">Handled by: Dr. Charu</p>
+        </div>
+        <span class="badge">Tab 1</span>
       </div>
+      <p>Minor/specialization rules, post‑registration concerns, and other non‑exam academic issues that require discussion.</p>
+    </a>
 
-      <h3>Scope</h3>
-      <ul>
-        <li>All matters related to UG projects and thesis work</li>
-        <li>Policies, timelines, supervision-related issues, student queries</li>
-      </ul>
-
-      <h3>Before you write</h3>
-      <ul class="checklist">
-        <li>Project title / area + supervisor (if assigned)</li>
-        <li>Current stage (proposal / mid / final)</li>
-        <li>Timeline constraints + deliverables</li>
-        <li>Specific question (policy, evaluation, supervision, etc.)</li>
-      </ul>
-
-      <p class="contact">
-        <b>Suggested subject:</b> <code>[UG Advising] Thesis/Project — &lt;StudentID&gt; — &lt;Stage&gt;</code>
-      </p>
-    </section>
-
-    <section class="panel card" id="pradip" role="region" aria-label="Other UG Academic/Advisory Matters">
-      <h2>Any Other UG Academic or Advisory Matter</h2>
-      <div class="who">
-        <span class="label">Responsible faculty</span>
-        <span class="value">Dr. Pradip</span>
+    <a class="tile col-6" href="exams-grades-timetable.html">
+      <div class="top">
+        <div>
+          <h3>Exams / Grades / Timetable / Pre‑Enrolment</h3>
+          <p class="kicker">Handled by: Dr. Parul</p>
+        </div>
+        <span class="badge">Tab 2</span>
       </div>
+      <p>Missed exams, grade concerns, timetable issues, and pre‑enrolment queries (including Dean office coordination when needed).</p>
+    </a>
 
-      <h3>Scope</h3>
-      <ul>
-        <li>Any UG academic/advisory matter not explicitly covered in the other four categories</li>
-      </ul>
+    <a class="tile col-6" href="documentation-course-admin.html">
+      <div class="top">
+        <div>
+          <h3>Documentation / Course Administration</h3>
+          <p class="kicker">Handled by: Dr. Qazi Azhad</p>
+        </div>
+        <span class="badge">Tab 3</span>
+      </div>
+      <p>Course catalogue/documentation, course offerings, internships (administrative side), and student activities coordination.</p>
+    </a>
 
-      <h3>Before you write</h3>
-      <ul class="checklist">
-        <li>Short description of the issue + why it doesn’t fit other tabs</li>
-        <li>Student info + program + semester</li>
-        <li>What you already tried / whom you contacted</li>
-      </ul>
+    <a class="tile col-6" href="ug-thesis.html">
+      <div class="top">
+        <div>
+          <h3>Undergraduate Thesis</h3>
+          <p class="kicker">Handled by: Dr. Neha</p>
+        </div>
+        <span class="badge">Tab 4</span>
+      </div>
+      <p>UG projects and thesis policies, timelines, supervision issues, and related student queries.</p>
+    </a>
 
-      <p class="contact">
-        <b>Suggested subject:</b> <code>[UG Advising] Other Query — &lt;StudentID&gt; — &lt;Topic&gt;</code>
-      </p>
-    </section>
+    <a class="tile col-12" href="other-matters.html">
+      <div class="top">
+        <div>
+          <h3>Other UG Matters</h3>
+          <p class="kicker">Handled by: Dr. Pradip</p>
+        </div>
+        <span class="badge">Tab 5</span>
+      </div>
+      <p>Any undergraduate academic/advisory matter not covered by the above four categories.</p>
+    </a>
+  </div>
+</section>
 
-    <footer class="wrap footer">
-      <p>
-        This structure follows the UG Committee resolutions on responsibilities and the decision to create a centralized UG advising website.
-      </p>
-    </footer>
-  </main>
+<section class="section">
+  <div class="section-head">
+    <h2>Frequently asked questions</h2>
+    <span class="badge">Quick answers</span>
+  </div>
 
-  <script>
-    const tabs = document.querySelectorAll(".tab");
-    const panels = document.querySelectorAll(".panel");
+  <details>
+    <summary>Which tab should I use?</summary>
+    <p>
+      Choose the tab that best matches your query. If you are unsure, use <strong>Other UG Matters</strong>.
+      On the form, you can also describe the issue and we will reroute internally if needed.
+    </p>
+  </details>
+  <details>
+    <summary>Can I email directly instead of using the form?</summary>
+    <p>
+      Yes. You can email <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a>. The form is recommended
+      because it collects key details in a consistent format.
+    </p>
+  </details>
+  <details>
+    <summary>Is this site official?</summary>
+    <p>
+      This is a departmental advising portal created to streamline communication.
+      Official university policies still apply; when needed, we will direct you to the Dean's Office / registrar process.
+    </p>
+  </details>
+</section>
 
-    tabs.forEach(btn => {
-      btn.addEventListener("click", () => {
-        tabs.forEach(b => b.classList.remove("active"));
-        panels.forEach(p => p.classList.remove("active"));
+  </div>
+</main>
 
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-        window.scrollTo({ top: document.querySelector(".tabs").offsetTop - 12, behavior: "smooth" });
-      });
-    });
-  </script>
+<footer>
+  <div class="container footer-row">
+    <div>
+      <div><strong>UG Advising (Mathematics)</strong> • Shiv Nadar University</div>
+      <div class="small">General inbox: <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a></div>
+    </div>
+    <div class="small">
+      Last updated: Dec 23, 2025 • <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

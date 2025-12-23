@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Query Form | UG Advising (Mathematics, SNU)</title>
+  <meta name="description" content="Undergraduate Advising portal for Mathematics at Shiv Nadar University." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="UG Advising Home">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>UG Advising • Mathematics</strong>
+        <span>Shiv Nadar University</span>
+      </div>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="small">Menu</span>
+    </label>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="tab" href="minor-specialization.html">Minor / Specialization / Post-Registration</a>
+<a class="tab" href="exams-grades-timetable.html">Exams / Grades / Timetable / Pre-Enrolment</a>
+<a class="tab" href="documentation-course-admin.html">Documentation / Course Administration</a>
+<a class="tab" href="ug-thesis.html">UG Thesis</a>
+<a class="tab" href="other-matters.html">Other UG Matters</a>
+    </nav>
+
+    <div class="cta">
+      <a class="button primary" href="form.html">Submit a query</a>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+  <div class="container">
+    
+<section class="card">
+  <div class="pad">
+    <span class="badge">Query form</span>
+    <h1>Submit a UG Advising Query</h1>
+    <p class="lead">
+      This form sends your query to <strong>uga.math@snu.edu.in</strong> using a static-form backend.
+      If this is your first time using the form, the receiving inbox may need to confirm/activate it once.
+    </p>
+
+    <div class="notice">
+      <strong>Privacy note:</strong> Please do not include sensitive personal data beyond what is needed for advising
+      (e.g., avoid sharing passwords or government IDs).
+    </div>
+
+    <hr class="hr" />
+
+    <!--
+      GitHub Pages is static hosting; it cannot send emails by itself.
+      This form uses FormSubmit (https://formsubmit.co/) to forward submissions to an email address.
+      You can swap to Formspree or a Google Apps Script backend if you prefer.
+    -->
+
+    <form action="https://formsubmit.co/uga.math@snu.edu.in" method="POST">
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_subject" value="UG Advising Query (Mathematics, SNU)" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- Optional: set a custom redirect after submission (must be a FULL URL) -->
+      <!-- <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/ug-advising/thanks.html" /> -->
+
+      <div class="form-row">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="snu_id">SNU ID (if applicable)</label>
+          <input id="snu_id" name="snu_id" type="text" />
+        </div>
+        <div>
+          <label for="programme">Programme / Year</label>
+          <input id="programme" name="programme" type="text" placeholder="e.g., BSc (Math), Year 2 / Sem 3" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="" selected disabled>Select a category</option>
+            <option value="minor">Minor / Specialization / Post‑Registration</option>
+            <option value="exams">Exams / Grades / Timetable / Pre‑Enrolment</option>
+            <option value="docs">Documentation / Course Administration</option>
+            <option value="thesis">UG Thesis</option>
+            <option value="other">Other UG Matters</option>
+          </select>
+        </div>
+        <div>
+          <label for="course_codes">Course code(s) (if relevant)</label>
+          <input id="course_codes" name="course_codes" type="text" placeholder="e.g., MAT3xx, MAT2yy" />
+        </div>
+      </div>
+
+      <div>
+        <label for="message">Your query</label>
+        <textarea id="message" name="message" required placeholder="Write your query clearly. Add deadlines/dates if any."></textarea>
+      </div>
+
+      <div>
+        <label for="attachments_note">Attachments (optional)</label>
+        <input id="attachments_note" name="attachments_note" type="text" placeholder="If you have attachments, mention what they are (screenshots, letter, etc.)." />
+      </div>
+
+      <button class="button primary" type="submit">Send query</button>
+
+      <p class="small" style="margin:0;">
+        Alternatively, email <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a>.
+      </p>
+    </form>
+
+    <script>
+      // Preselect category from URL, e.g. form.html?category=minor
+      (function(){
+        const params = new URLSearchParams(window.location.search);
+        const c = params.get("category");
+        if(!c) return;
+        const sel = document.getElementById("category");
+        for(const opt of sel.options){
+          if(opt.value === c){
+            sel.value = c;
+            break;
+          }
+        }
+      })();
+    </script>
+  </div>
+</section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>
+      <div><strong>UG Advising (Mathematics)</strong> • Shiv Nadar University</div>
+      <div class="small">General inbox: <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a></div>
+    </div>
+    <div class="small">
+      Last updated: Dec 23, 2025 • <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
