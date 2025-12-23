@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UG Advising — Centralized Help Desk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div>
+      <h1>UG Advising</h1>
+      <p class="sub">
+        Centralized platform for undergraduate advising and communication.
+      </p>
+    </div>
+    <div class="pill">Last updated: 22 Dec 2025</div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>How to use this website</h2>
+      <ol>
+        <li>Pick the tab that matches your query.</li>
+        <li>Read the scope + checklist.</li>
+        <li>Prepare the required info before emailing the responsible faculty.</li>
+      </ol>
+      <p class="note">
+        If your query doesn’t fit any tab, use <b>“Other UG Academic/Advisory Matters”</b>.
+      </p>
+    </section>
+
+    <nav class="tabs card" aria-label="UG Advising Tabs">
+      <button class="tab active" data-tab="charu">Minor / Specialization / Post-Registration</button>
+      <button class="tab" data-tab="parul">Exams / Grades / Timetable / Pre-Enrollment</button>
+      <button class="tab" data-tab="qazi">Documentation / Course Administration</button>
+      <button class="tab" data-tab="neha">UG Thesis</button>
+      <button class="tab" data-tab="pradip">Other UG Academic/Advisory Matters</button>
+    </nav>
+
+    <section class="panel card active" id="charu" role="region" aria-label="Minor / Specialization / Post-Registration">
+      <h2>Minor, Specialization, and Post-Registration Course Concerns</h2>
+      <div class="who">
+        <span class="label">Responsible faculty</span>
+        <span class="value">Dr. Charu</span>
+      </div>
+
+      <h3>Scope</h3>
+      <ul>
+        <li>Queries related to Minor programs and Specializations</li>
+        <li>Concerns after course registration requiring faculty-level discussion</li>
+        <li>Excludes examination- and grade-related matters</li>
+      </ul>
+
+      <h3>Before you write</h3>
+      <ul class="checklist">
+        <li>Student name + ID + program + batch</li>
+        <li>Minor/Specialization name and current status</li>
+        <li>Courses involved (course code + section)</li>
+        <li>Clear question + what outcome you want</li>
+      </ul>
+
+      <p class="contact">
+        <b>Suggested subject:</b> <code>[UG Advising] Minor/Specialization Query — &lt;StudentID&gt;</code>
+      </p>
+    </section>
+
+    <section class="panel card" id="parul" role="region" aria-label="Exams / Grades / Timetable / Pre-Enrollment">
+      <h2>Examination, Grades, Timetable, and Pre-Enrollment Queries</h2>
+      <div class="who">
+        <span class="label">Responsible faculty</span>
+        <span class="value">Dr. Parul</span>
+      </div>
+
+      <h3>Scope</h3>
+      <ul>
+        <li>Missed examinations and related concerns (often with Dean’s office)</li>
+        <li>Grade-related concerns and suggestions</li>
+        <li>Timetable management issues</li>
+      </ul>
+
+      <h3>Before you write</h3>
+      <ul class="checklist">
+        <li>Course code + instructor + semester</li>
+        <li>Exact issue (missed exam / grade / timetable)</li>
+        <li>Any supporting document (medical note, email trail, etc.)</li>
+        <li>Deadline sensitivity (dates)</li>
+      </ul>
+
+      <p class="contact">
+        <b>Suggested subject:</b> <code>[UG Advising] Exam/Grade/Timetable — &lt;CourseCode&gt; — &lt;StudentID&gt;</code>
+      </p>
+    </section>
+
+    <section class="panel card" id="qazi" role="region" aria-label="Documentation / Course Administration">
+      <h2>Academic Documentation and Course Administration</h2>
+      <div class="who">
+        <span class="label">Responsible faculty</span>
+        <span class="value">Dr. Qazi Azhad</span>
+      </div>
+
+      <h3>Scope</h3>
+      <ul>
+        <li>Documentation queries (course catalogue, etc.)</li>
+        <li>Course allotment and course offerings</li>
+        <li>Student internship, student activities</li>
+      </ul>
+
+      <h3>Before you write</h3>
+      <ul class="checklist">
+        <li>What document/info you need (and why)</li>
+        <li>Program + semester + relevant course list</li>
+        <li>For internships/activities: dates + approvals needed</li>
+      </ul>
+
+      <p class="contact">
+        <b>Suggested subject:</b> <code>[UG Advising] Documentation/Course Admin — &lt;Topic&gt; — &lt;StudentID&gt;</code>
+      </p>
+    </section>
+
+    <section class="panel card" id="neha" role="region" aria-label="UG Thesis">
+      <h2>Undergraduate Thesis</h2>
+      <div class="who">
+        <span class="label">Responsible faculty</span>
+        <span class="value">Dr. Neha</span>
+      </div>
+
+      <h3>Scope</h3>
+      <ul>
+        <li>All matters related to UG projects and thesis work</li>
+        <li>Policies, timelines, supervision-related issues, student queries</li>
+      </ul>
+
+      <h3>Before you write</h3>
+      <ul class="checklist">
+        <li>Project title / area + supervisor (if assigned)</li>
+        <li>Current stage (proposal / mid / final)</li>
+        <li>Timeline constraints + deliverables</li>
+        <li>Specific question (policy, evaluation, supervision, etc.)</li>
+      </ul>
+
+      <p class="contact">
+        <b>Suggested subject:</b> <code>[UG Advising] Thesis/Project — &lt;StudentID&gt; — &lt;Stage&gt;</code>
+      </p>
+    </section>
+
+    <section class="panel card" id="pradip" role="region" aria-label="Other UG Academic/Advisory Matters">
+      <h2>Any Other UG Academic or Advisory Matter</h2>
+      <div class="who">
+        <span class="label">Responsible faculty</span>
+        <span class="value">Dr. Pradip</span>
+      </div>
+
+      <h3>Scope</h3>
+      <ul>
+        <li>Any UG academic/advisory matter not explicitly covered in the other four categories</li>
+      </ul>
+
+      <h3>Before you write</h3>
+      <ul class="checklist">
+        <li>Short description of the issue + why it doesn’t fit other tabs</li>
+        <li>Student info + program + semester</li>
+        <li>What you already tried / whom you contacted</li>
+      </ul>
+
+      <p class="contact">
+        <b>Suggested subject:</b> <code>[UG Advising] Other Query — &lt;StudentID&gt; — &lt;Topic&gt;</code>
+      </p>
+    </section>
+
+    <footer class="wrap footer">
+      <p>
+        This structure follows the UG Committee resolutions on responsibilities and the decision to create a centralized UG advising website.
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".panel");
+
+    tabs.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabs.forEach(b => b.classList.remove("active"));
+        panels.forEach(p => p.classList.remove("active"));
+
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+        window.scrollTo({ top: document.querySelector(".tabs").offsetTop - 12, behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
