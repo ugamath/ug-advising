@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Downloads | UG Advising (Mathematics, SNU)</title>
+  <meta name="description" content="Undergraduate Advising portal for Mathematics at Shiv Nadar University." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="UG Advising Home">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>UG Advising • Mathematics</strong>
+        <span>Shiv Nadar University</span>
+      </div>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="small">Menu</span>
+    </label>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="tab" href="minor-specialization.html">Minor / Specialization / Post-Registration</a>
+      <a class="tab" href="exams-grades-timetable.html">Exams / Grades / Timetable / Pre-Enrolment</a>
+      <a class="tab" href="documentation-course-admin.html">Documentation / Course Administration</a>
+      <a class="tab" href="ug-thesis.html">UG Thesis</a>
+      <a class="tab" href="other-matters.html">Other UG Matters</a>
+      <a class="tab active" href="downloads.html">Downloads</a>
+    </nav>
+
+    <div class="cta">
+      <a class="button primary" href="form.html">Submit a query</a>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+  <div class="container">
+
+<section class="card">
+  <div class="pad">
+    <span class="badge">Resources</span>
+    <h1>Downloads</h1>
+    <p class="lead">
+      This page hosts <strong>public</strong> downloadable files (templates, guidelines, etc.) and also lets you
+      <strong>submit</strong> a document to the UG advising inbox.
+    </p>
+
+    <hr class="hr" />
+
+    <div class="grid">
+      <div class="tile col-6">
+        <h2>Public downloads</h2>
+        <p class="kicker">Files stored in this repository under <span class="code">/downloads</span></p>
+        <ul class="list">
+          <li><a href="downloads/README.txt">README.txt (example placeholder)</a></li>
+          <!-- Add more links here, e.g.:
+          <li><a href="downloads/syllabus.pdf">Syllabus / Course list (PDF)</a></li>
+          -->
+        </ul>
+        <p class="small">
+          <strong>To publish a new file:</strong> upload it to the repository folder <span class="code">downloads/</span>
+          and add a link above (or replace this list).
+        </p>
+      </div>
+
+      <div class="tile col-6">
+        <h2>Submit a document to the advising inbox</h2>
+        <p class="kicker">Sends to <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a></p>
+
+        <form action="https://formsubmit.co/uga.math@snu.edu.in" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="UG Advising: Document submission (Mathematics, SNU)" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row">
+            <div>
+              <label for="d_name">Full name</label>
+              <input id="d_name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="d_email">Email</label>
+              <input id="d_email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="d_about">What is the file about?</label>
+            <input id="d_about" name="about" type="text" placeholder="e.g., Internship approval letter, course plan, screenshot of timetable" required />
+          </div>
+
+          <div>
+            <label for="d_file">Upload file (optional, ≤ 5 MB)</label>
+            <input id="d_file" name="attachment" type="file"
+                   accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.zip" />
+            <p class="small" style="margin:.35rem 0 0;">If your file is larger than 5 MB, email it directly.</p>
+          </div>
+
+          <button class="button primary" type="submit">Send</button>
+        </form>
+
+        <p class="small" style="margin:0;">
+          Note: Submitting a file here <strong>does not automatically publish it</strong> on the website.
+          To make a file publicly downloadable, someone with repository access must upload it to <span class="code">/downloads</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>FAQ</h2>
+    <span class="badge">Downloads</span>
+  </div>
+
+  <details>
+    <summary>Why can’t I upload a file and have it appear publicly right away?</summary>
+    <p>
+      GitHub Pages is static hosting. It can serve files that are already in the repository, but it cannot store new uploads
+      from site visitors without an additional backend service.
+    </p>
+  </details>
+
+  <details>
+    <summary>How do we publish a new template (PDF/Word) for students to download?</summary>
+    <p>
+      Add the file to the repository folder <span class="code">downloads/</span> and then add a link to it in the “Public downloads” list above.
+    </p>
+  </details>
+
+  <details>
+    <summary>What file types are allowed?</summary>
+    <p>
+      Common document/image formats are accepted. Keep the total upload size under 5 MB for the form.
+      For larger files, email <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a>.
+    </p>
+  </details>
+</section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>
+      <div><strong>UG Advising (Mathematics)</strong> • Shiv Nadar University</div>
+      <div class="small">General inbox: <a href="mailto:uga.math@snu.edu.in">uga.math@snu.edu.in</a></div>
+    </div>
+    <div class="small">
+      Last updated: Dec 23, 2025 • <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

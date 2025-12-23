@@ -24,3 +24,9 @@
 ## Form setup note
 The form uses FormSubmit (https://formsubmit.co/). The receiving mailbox may need to confirm/activate the form once.
 To redirect to `thanks.html`, edit the `_next` hidden input in `form.html` and replace `YOUR_GITHUB_USERNAME` with your GitHub username.
+
+
+## Downloads tab
+- Public files go in `downloads/`.
+- Link them from `downloads.html` at `downloads/<filename>`.
+- The upload form emails the file to `uga.math@snu.edu.in` but does not auto-publish.

@@ -28,10 +28,11 @@
 
     <nav class="nav" aria-label="Primary">
       <a class="tab" href="minor-specialization.html">Minor / Specialization / Post-Registration</a>
-<a class="tab" href="exams-grades-timetable.html">Exams / Grades / Timetable / Pre-Enrolment</a>
-<a class="tab" href="documentation-course-admin.html">Documentation / Course Administration</a>
-<a class="tab" href="ug-thesis.html">UG Thesis</a>
-<a class="tab" href="other-matters.html">Other UG Matters</a>
+      <a class="tab" href="exams-grades-timetable.html">Exams / Grades / Timetable / Pre-Enrolment</a>
+      <a class="tab" href="documentation-course-admin.html">Documentation / Course Administration</a>
+      <a class="tab" href="ug-thesis.html">UG Thesis</a>
+      <a class="tab" href="other-matters.html">Other UG Matters</a>
+      <a class="tab" href="downloads.html">Downloads</a>
     </nav>
 
     <div class="cta">
@@ -65,11 +66,12 @@
       You can swap to Formspree or a Google Apps Script backend if you prefer.
     -->
 
-    <form action="https://formsubmit.co/uga.math@snu.edu.in" method="POST">
+    <form action="https://formsubmit.co/uga.math@snu.edu.in" method="POST" enctype="multipart/form-data">
       <!-- FormSubmit settings -->
       <input type="hidden" name="_subject" value="UG Advising Query (Mathematics, SNU)" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
       <!-- Optional: set a custom redirect after submission (must be a FULL URL) -->
       <!-- <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/ug-advising/thanks.html" /> -->
 
@@ -118,10 +120,14 @@
         <textarea id="message" name="message" required placeholder="Write your query clearly. Add deadlines/dates if any."></textarea>
       </div>
 
+      
       <div>
-        <label for="attachments_note">Attachments (optional)</label>
-        <input id="attachments_note" name="attachments_note" type="text" placeholder="If you have attachments, mention what they are (screenshots, letter, etc.)." />
+        <label for="attachment">Attachment (optional, ≤ 5 MB)</label>
+        <input id="attachment" name="attachment" type="file"
+               accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.zip" />
+        <p class="small" style="margin:.35rem 0 0;">If you upload a file, please also mention in your message what it contains.</p>
       </div>
+
 
       <button class="button primary" type="submit">Send query</button>
 
